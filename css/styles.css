@@ -40,6 +40,9 @@ p {
     margin-top: 1.2em;
 }
 
+.tituloPrincipal {
+    animation: maquina 8s infinite alternate;
+}
 
 .Encabezado {
     background-image: url(../img/copadelmundo.jpg);
@@ -995,4 +998,14 @@ table {
 
 
 
+}
+
+@keyframes maquina {
+    from { 
+width: 100%;
+    }
+
+    to {
+        width: 25%;
+    }
 }
