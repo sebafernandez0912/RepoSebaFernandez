@@ -51,12 +51,12 @@ p {
 
 }
 
+
 .EncabezadoImg {
     max-width: auto;
     max-height: auto;
     height: max-content;
 }
-
 
 
 .LogoNavContainer {
@@ -214,12 +214,14 @@ li {
 
 
 
-#Container {
+#ContainerPaises {
     border: 10px;
     overflow: hidden;
     padding: 50px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
+    font-family: "Qatar";
+    color: black;
 }
 
 .Grupos {
@@ -262,6 +264,8 @@ h4 {
     grid-template-rows: repeat(2, 1fr);
     text-align: center;
     margin: 15px;
+    font-family: "Qatar";
+    color: black;
 
 }
 
@@ -487,7 +491,7 @@ table {
         font-size: 16px;
     }
 
-    #Container {
+    #ContainerPaises {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
@@ -1006,6 +1010,8 @@ width: 100%;
     }
 
     to {
-        width: 25%;
+        width: 50%;
     }
 }
+
+
