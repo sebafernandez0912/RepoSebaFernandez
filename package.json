@@ -1,11 +1,10 @@
 {
   "name": "reposebafernandez",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss sass/styles.scss css/styles.css",
+    "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -21,5 +20,6 @@
   "devDependencies": {
     "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
-  }
+  },
+  "description": ""
 }

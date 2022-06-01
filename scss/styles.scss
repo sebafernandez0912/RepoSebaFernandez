@@ -1,0 +1,978 @@
+@import "variables";
+@import "header";
+@import "footer";
+
+
+/* index */
+body {
+    background-image: url(../img/fondoweb.jpg);
+    margin: 0%;
+    padding: 0%;
+}
+
+@font-face {
+    font-family: "Qatar";
+    src: url(../fonts/Qatar2022Arabic-Heavy.ttf);
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: "Qatar";
+    color: white;
+    text-align: center;
+    font-size: 100px;
+
+}
+
+h2 {
+    font-family: "Qatar";
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    text-decoration: none;
+}
+
+p {
+    font-family: "Qatar";
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 1.2em;
+}
+
+.tituloPrincipal {
+    animation: maquina 8s infinite alternate;
+}
+
+
+
+.BanderaAlemania {
+    width: 40px;
+}
+
+.BanderaArabiaSaudita {
+    width: 40px;
+}
+
+.BanderaArgentina {
+    width: 40px;
+}
+
+.BanderaBelgica {
+    width: 40px
+}
+
+.BanderaBrasil {
+    width: 40px
+}
+
+.BanderaCamerun {
+    width: 40px
+}
+
+.BanderaCanada {
+    width: 40px
+}
+
+.BanderaCoreaDelSur {
+    width: 40px
+}
+
+.BanderaCroacia {
+    width: 40px
+}
+
+.BanderaDinamarca {
+    width: 40px
+}
+
+.BanderaEcuador {
+    width: 40px
+}
+
+.BanderaEspaña {
+    width: 40px
+}
+
+.BanderaEstadosUnidos {
+    width: 40px
+}
+
+.BanderaFrancia {
+    width: 40px
+}
+
+.BanderaGhana {
+    width: 40px
+}
+
+.BanderaInglaterra {
+    width: 40px
+}
+
+.BanderaIran {
+    width: 40px
+}
+
+.BanderaJapon {
+    width: 40px
+}
+
+.BanderaMarruecos {
+    width: 40px
+}
+
+.BanderaMexico {
+    width: 40px
+}
+
+.BanderaPaisesBajos {
+    width: 40px
+}
+
+.BanderaPolonia {
+    width: 40px
+}
+
+.BanderaPortugal {
+    width: 40px
+}
+
+.BanderaQatar {
+    width: 40px
+}
+
+.BanderaSenegal {
+    width: 40px
+}
+
+.BanderaSerbia {
+    width: 40px
+}
+
+.BanderaSuiza {
+    width: 40px
+}
+
+.BanderaTunez {
+    width: 40px
+}
+
+.BanderaUruguay {
+    width: 40px
+}
+
+.BanderaRepechaje {
+    width: 40px
+}
+
+.Repechaje {
+    font-size: 25px;
+}
+
+li {
+    list-style-type: none;
+    font-family: "Qatar";
+    font-size: 32px;
+
+}
+
+
+#ContainerPaises {
+    border: 10px;
+    overflow: hidden;
+    padding: 50px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    font-family: "Qatar";
+    color: black;
+}
+
+.Grupos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Page Grupos */
+
+h3 {
+    font-family: "Qatar";
+    font-size: 45px;
+    color: green;
+    text-align: center;
+
+}
+
+h4 {
+    font-family: "Qatar";
+    font-size: 40px;
+    text-align: center;
+    color: white;
+}
+
+.grupos-grupos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    text-align: center;
+    margin: 15px;
+    font-family: "Qatar";
+    color: black;
+
+}
+
+iframe {
+
+    margin-left: 35%;
+
+}
+
+/* Page Estadios*/
+
+.EstadioAlJanoub {
+    display: flex;
+    justify-content: center;
+}
+
+.EstadioCiudadDeLaEducacion {
+    display: flex;
+    justify-content: center;
+}
+
+.EstadioAhmadBinAli {
+    display: flex;
+    justify-content: center;
+}
+
+.EstadioAlThumama {
+    display: flex;
+    justify-content: center;
+}
+
+.EstadioAlBayt {
+    display: flex;
+    justify-content: center;
+}
+
+.Estadio974 {
+    display: flex;
+    justify-content: center;
+}
+
+.EstadioLusail {
+    display: flex;
+    justify-content: center;
+}
+
+.EstadioKhalifa {
+    display: flex;
+    justify-content: center;
+}
+
+/* page Ediciones Anteriores */
+
+.imgUruguay1930 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgItalia1934 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgFrancia1938 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgBrasil1950 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgSuiza1954 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgSuecia1958 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgChile1962 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgInglaterra1966 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgMexico1970 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgAlemania1974 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgArgentina1978 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgEspaña1982 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgMexico1986 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgItalia1990 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgEstadosUnidos1994 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgFrancia1998 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgCoreaJapon2002 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgAlemania2006 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgSudafrica2010 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgBrasil2014 {
+    width: 1900px;
+    height: 980px;
+}
+
+.imgRusia2018 {
+    width: 1900px;
+    height: 980px;
+}
+
+/* page ediciones anteriores */
+table {
+    width: 100%;
+    border: 2px solid black;
+    background-color: blue;
+    font-family: "Qatar";
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+/* page fixture */
+
+.fixtureGrupos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.Octavos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.Cuartos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.Semifinal {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1);
+}
+
+/* mediaqueries */
+
+
+@media screen and (max-width: 420px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    #ContainerPaises {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .Repechaje {
+        font-size: 15px;
+    }
+
+    .BanderaAlemania {
+        width: 20px;
+    }
+
+    .BanderaArabiaSaudita {
+        width: 20px;
+    }
+
+    .BanderaArgentina {
+        width: 20px;
+    }
+
+    .BanderaBelgica {
+        width: 20px
+    }
+
+    .BanderaBrasil {
+        width: 20px
+    }
+
+    .BanderaCamerun {
+        width: 20px
+    }
+
+    .BanderaCanada {
+        width: 20px
+    }
+
+    .BanderaCoreaDelSur {
+        width: 20px
+    }
+
+    .BanderaCroacia {
+        width: 20px
+    }
+
+    .BanderaDinamarca {
+        width: 20px
+    }
+
+    .BanderaEcuador {
+        width: 20px
+    }
+
+    .BanderaEspaña {
+        width: 20px
+    }
+
+    .BanderaEstadosUnidos {
+        width: 20px
+    }
+
+    .BanderaFrancia {
+        width: 20px
+    }
+
+    .BanderaGhana {
+        width: 20px
+    }
+
+    .BanderaInglaterra {
+        width: 20px
+    }
+
+    .BanderaIran {
+        width: 20px
+    }
+
+    .BanderaJapon {
+        width: 20px
+    }
+
+    .BanderaMarruecos {
+        width: 20px
+    }
+
+    .BanderaMexico {
+        width: 20px
+    }
+
+    .BanderaPaisesBajos {
+        width: 20px
+    }
+
+    .BanderaPolonia {
+        width: 20px
+    }
+
+    .BanderaPortugal {
+        width: 20px
+    }
+
+    .BanderaQatar {
+        width: 20px
+    }
+
+    .BanderaSenegal {
+        width: 20px
+    }
+
+    .BanderaSerbia {
+        width: 20px
+    }
+
+    .BanderaSuiza {
+        width: 20px
+    }
+
+    .BanderaTunez {
+        width: 20px
+    }
+
+    .BanderaUruguay {
+        width: 20px
+    }
+
+    .BanderaRepechaje {
+        width: 20px
+    }
+
+    .Grupos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    h3 {
+        font-size: 25px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .grupos-grupos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 15px;
+    }
+
+    iframe {
+        margin-left: 0%;
+        box-sizing: border-box;
+    }
+
+    .titleGrupos {
+        font-size: 20px;
+    }
+
+    .subtitleFechas {
+        font-size: 15px;
+    }
+
+    .fixtureGrupos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .EstadioAlJanoub {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .EstadioCiudadDeLaEducacion {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .EstadioAhmadBinAli {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .EstadioAlThumama {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .EstadioAlBayt {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .Estadio974 {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .EstadioLusail {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .EstadioKhalifa {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    .imgUruguay1930 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgItalia1934 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgFrancia1938 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgBrasil1950 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgSuiza1954 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgSuecia1958 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgChile1962 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgInglaterra1966 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgMexico1970 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgAlemania1974 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgArgentina1978 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgEspaña1982 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgMexico1986 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgItalia1990 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgEstadosUnidos1994 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgFrancia1998 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgCoreaJapon2002 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgAlemania2006 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgSudafrica2010 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgBrasil2014 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .imgRusia2018 {
+        width: 420px;
+        height: 200px;
+    }
+
+    .Poisciones {
+        width: 100%;
+    }
+
+    th {
+        font-size: 10px;
+    }
+
+    td {
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    #Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .LogoNavContainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .grupos-grupos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin: 15px;
+    }
+
+    iframe {
+        margin-left: 20%;
+
+    }
+
+    h3 {
+        font-size: 35px;
+    }
+
+    h4 {
+        font-size: 30px;
+    }
+
+    .titleGrupos {
+        font-size: 25px;
+    }
+
+    .subtitleFechas {
+        font-size: 20px;
+    }
+
+    .fixtureGrupos {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .imgUruguay1930 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgItalia1934 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgFrancia1938 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgBrasil1950 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgSuiza1954 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgSuecia1958 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgChile1962 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgInglaterra1966 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgMexico1970 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgAlemania1974 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgArgentina1978 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgEspaña1982 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgMexico1986 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgItalia1990 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgEstadosUnidos1994 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgFrancia1998 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgCoreaJapon2002 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgAlemania2006 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgSudafrica2010 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgBrasil2014 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .imgRusia2018 {
+        width: 100%;
+        height: 20%;
+    }
+
+    .Poisciones {
+        width: 100%;
+    }
+
+    th {
+        font-size: 12px;
+    }
+
+    td {
+        font-size: 15px;
+    }
+    .Grupos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media  screen and (max-width: 1280px) {
+
+        #Container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }   
+        
+    }
+
+    .video { display: flex;
+    justify-content: center;}
+
+
+}
+
+
+@keyframes maquina {
+    from { 
+width: 100%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+
