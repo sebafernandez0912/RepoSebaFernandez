@@ -26,6 +26,12 @@ body {
     color: white;
     text-align: center;
     font-size: 6rem; }
+    @media screen and (max-width: 480px) {
+      body h1 {
+        font-size: 2rem; } }
+    @media screen and (max-width: 768px) {
+      body h1 {
+        font-size: 1rem; } }
   body h2 {
     font-family: "Qatar";
     color: white;
@@ -53,6 +59,26 @@ body {
   color: black;
   font-size: 2rem;
   list-style: none; }
+  @media screen and (max-width: 480px) {
+    #ContainerPaises {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(32, 1fr); } }
+  @media screen and (max-width: 768px) {
+    #ContainerPaises {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(16, 1fr); } }
+  @media screen and (max-width: 992px) {
+    #ContainerPaises {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(8, 1fr); } }
+  @media screen and (max-width: 1200px) {
+    #ContainerPaises {
+      display: grid;
+      grid-template-columns: repeat 8, 1fr;
+      grid-template-rows: repeat(4, 1fr); } }
 
 .Grupos {
   display: flex;
@@ -156,3 +182,29 @@ table {
 
 ul {
   list-style: none; }
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem; }
+
+.form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: #64c8ff;
+  cursor: pointer; }
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }

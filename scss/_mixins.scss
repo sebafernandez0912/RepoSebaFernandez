@@ -3,3 +3,9 @@
     justify-content: $just;
     align-items: $align;
 }
+
+@mixin pantallas($breakpoint) {
+    @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+        @content;
+    }
+}

@@ -16,9 +16,10 @@
 body {
     margin: 0%;
     padding: 0%;
+
     background: {
-    image: url(../img/fondoweb.jpg);
-}
+        image: url(../img/fondoweb.jpg);
+    }
 
     a {
         text-decoration: none;
@@ -28,15 +29,19 @@ body {
         font-family: $font-principal;
         color: white;
         text-align: center;
-        font-size:sizes(xl)
-
+        font-size: sizes(xl);
+    @include pantallas(sm) {
+        font-size: 2rem;};
+        @include pantallas (md) {
+            font-size: 1rem;
+        }
     }
 
     h2 {
         font-family: $font-principal;
         color: white;
         text-align: center;
-        font-size:sizes(l);
+        font-size: sizes(l);
         text-decoration: none;
     }
 
@@ -51,9 +56,10 @@ body {
     }
 
 }
+
 .Bandera {
-    width:40px;
-    
+    width: 40px;
+
 }
 
 
@@ -67,9 +73,33 @@ body {
     color: black;
     font-size: sizes(parrafo);
     list-style: none;
+    
+    @include pantallas(sm) {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:repeat(32, 1fr) };
+
+        @include pantallas(md) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(16, 1fr);
+        };
+        @include pantallas(lg) {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(8,1fr);
+        };
+        @include pantallas(xxl) {
+            display: grid;
+            grid-template-columns: repeat (8, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+    
 }
 
-.Grupos {@include flex (flex, center, center)}
+.Grupos {
+    @include flex (flex, center, center)
+}
 
 
 
@@ -98,16 +128,18 @@ h4 {
     color: black;
 }
 
-.grupos-grupos ul li {list-style: none;
-font-family: $font-principal;
-font-size: sizes(parrafo);}
+.grupos-grupos ul li {
+    list-style: none;
+    font-family: $font-principal;
+    font-size: sizes(parrafo);
+}
 
-.Video { @include flex (flex, center, center)
+.Video {
+    @include flex (flex, center, center)
 }
 
 .Estadios {
     @include flex (flex, center, center)
-
 }
 
 .Estadio:hover {
@@ -116,65 +148,96 @@ font-size: sizes(parrafo);}
     box-shadow: 0px 0px 15px 15px #ec731e;
     -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);}
+    -webkit-transform: rotate(360deg);
+}
 
-.imgMundiales { display: flex;
+.imgMundiales {
+    @include flex (flex, center, center)
+}
+
+table {
+    width: 100%;
+    border: 2px solid black;
+    background-color: blue;
+    font-family: $font-principal;
+    color: white;
+    font-size: 1.25rem;
+    text-align: center;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+
+.fixtureGrupos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    font-family: $font-principal;
+    font-size: sizes(parrafo);
+    color: $color-primario;
+}
+
+.Octavos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    font-family: $font-principal;
+    font-size: sizes(parrafo);
+    color: $color-primario;
+}
+
+.Cuartos {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-family: $font-principal;
+    font-size: sizes(parrafo);
+    color: $color-primario;
+}
+
+.Semifinal {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1);
+    font-family: $font-principal;
+    font-size: sizes(parrafo);
+    color: $color-primario;
+}
+
+ul {
+    list-style: none;
+}
+
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-    
-    table {
-        width: 100%;
-        border: 2px solid black;
-        background-color: blue;
-        font-family: $font-principal;
-        color: white;
-        font-size: 1.25rem;
-        text-align: center;
-        table-layout: fixed;
-        border-collapse: collapse;
-    }
+.form input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+}
 
+.form button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(100, 200, 255);
+    cursor: pointer;
+}
 
-
-    .fixtureGrupos {
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        font-family: $font-principal;
-        font-size: sizes(parrafo);
-        color: $color-primario;
-    }
-
-    .Octavos  {
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        font-family: $font-principal;
-        font-size: sizes(parrafo);
-        color: $color-primario;
-    }
-
-    .Cuartos  {
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        font-family: $font-principal;
-        font-size: sizes(parrafo);
-        color: $color-primario;
-    }
-
-    .Semifinal  {
-        text-align: center;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1);
-        font-family: $font-principal;
-        font-size: sizes(parrafo);
-        color: $color-primario;
-    }
-ul {list-style: none;}
-
+.slide {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
