@@ -5,6 +5,7 @@
   color: yellow; }
 
 .footer {
+  width: 100%;
   background-color: black;
   font-family: "Qatar";
   box-shadow: 0 5px 10px -5px white; }
@@ -31,13 +32,19 @@ body {
         font-size: 2rem; } }
     @media screen and (max-width: 768px) {
       body h1 {
-        font-size: 1rem; } }
+        font-size: 2rem; } }
   body h2 {
     font-family: "Qatar";
     color: white;
     text-align: center;
     font-size: 4.5rem;
     text-decoration: none; }
+    @media screen and (max-width: 480px) {
+      body h2 {
+        font-size: 2.5rem; } }
+    @media screen and (max-width: 768px) {
+      body h2 {
+        font-size: 3rem; } }
   body p {
     font-family: "Qatar";
     text-align: center;
@@ -49,7 +56,7 @@ body {
 .Bandera {
   width: 40px; }
 
-#ContainerPaises {
+.Participantes {
   border: 10px;
   overflow: hidden;
   padding: 50px;
@@ -60,27 +67,44 @@ body {
   font-size: 2rem;
   list-style: none; }
   @media screen and (max-width: 480px) {
-    #ContainerPaises {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(32, 1fr); } }
-  @media screen and (max-width: 768px) {
-    #ContainerPaises {
+    .Participantes {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(16, 1fr); } }
+      grid-template-rows: repeat(16, 1fr);
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 768px) {
+    .Participantes {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(11, 1fr); } }
   @media screen and (max-width: 992px) {
-    #ContainerPaises {
+    .Participantes {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(8, 1fr); } }
   @media screen and (max-width: 1200px) {
-    #ContainerPaises {
+    .Participantes {
       display: grid;
       grid-template-columns: repeat 8, 1fr;
       grid-template-rows: repeat(4, 1fr); } }
 
-.Grupos {
+.grupos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1em; }
+  @media screen and (max-width: 480px) {
+    .grupos {
+      margin-left: 30px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr); } }
+  @media screen and (max-width: 768px) {
+    .grupos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); } }
+
+.imgMundiales {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -105,6 +129,16 @@ h4 {
   margin: 15px;
   font-family: "Qatar";
   color: black; }
+  @media screen and (max-width: 480px) {
+    .grupos-grupos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr); } }
+  @media screen and (max-width: 768px) {
+    .grupos-grupos {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr); } }
 
 .grupos-grupos ul li {
   list-style: none;
@@ -129,11 +163,6 @@ h4 {
   transform: rotate(360deg);
   -webkit-transform: rotate(360deg); }
 
-.imgMundiales {
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
 table {
   width: 100%;
   border: 2px solid black;
@@ -153,6 +182,9 @@ table {
   font-family: "Qatar";
   font-size: 2rem;
   color: black; }
+  @media screen and (max-width: 480px) {
+    .fixtureGrupos {
+      font-size: 1.3rem; } }
 
 .Octavos {
   text-align: center;
@@ -162,6 +194,9 @@ table {
   font-family: "Qatar";
   font-size: 2rem;
   color: black; }
+  @media screen and (max-width: 480px) {
+    .Octavos {
+      font-size: 1.3rem; } }
 
 .Cuartos {
   text-align: center;
@@ -170,15 +205,21 @@ table {
   font-family: "Qatar";
   font-size: 2rem;
   color: black; }
+  @media screen and (max-width: 480px) {
+    .Cuartos {
+      font-size: 1.3rem; } }
 
 .Semifinal {
   text-align: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1);
+  grid-template-rows: repeat(1, 1fr);
   font-family: "Qatar";
   font-size: 2rem;
   color: black; }
+  @media screen and (max-width: 480px) {
+    .Semifinal {
+      font-size: 1.3rem; } }
 
 ul {
   list-style: none; }

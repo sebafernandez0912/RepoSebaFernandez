@@ -33,7 +33,7 @@ body {
     @include pantallas(sm) {
         font-size: 2rem;};
         @include pantallas (md) {
-            font-size: 1rem;
+            font-size: 2rem;
         }
     }
 
@@ -43,6 +43,8 @@ body {
         text-align: center;
         font-size: sizes(l);
         text-decoration: none;
+        @include pantallas (sm) {font-size: 2.5rem;};
+        @include pantallas (md) {font-size: 3rem;}
     }
 
     p {
@@ -62,8 +64,7 @@ body {
 
 }
 
-
-#ContainerPaises {
+.Participantes {
     border: 10px;
     overflow: hidden;
     padding: 50px;
@@ -76,13 +77,14 @@ body {
     
     @include pantallas(sm) {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    grid-template-rows:repeat(32, 1fr) };
+        grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:repeat(16, 1fr);
+font-size: 1.3rem };
 
         @include pantallas(md) {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(16, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(11, 1fr);
         };
         @include pantallas(lg) {
             display: grid;
@@ -97,11 +99,21 @@ body {
     
 }
 
-.Grupos {
-    @include flex (flex, center, center)
+.grupos { display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 1em;
+
+    @include pantallas (sm) {margin-left: 30px;
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);}
+
+@include pantallas (md) {display: grid;
+grid-template-columns:repeat(3, 1fr) ;}
 }
 
-
+.imgMundiales {@include flex (flex, center, center)}
 
 h3 {
     font-family: $font-principal;
@@ -126,6 +138,12 @@ h4 {
     margin: 15px;
     font-family: $font-principal;
     color: black;
+    @include pantallas (sm) { display: grid;
+    grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);}
+@include pantallas (md) { display: grid;
+    grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);}
 }
 
 .grupos-grupos ul li {
@@ -139,7 +157,7 @@ h4 {
 }
 
 .Estadios {
-    @include flex (flex, center, center)
+    @include flex (flex, center, center);
 }
 
 .Estadio:hover {
@@ -149,10 +167,6 @@ h4 {
     -webkit-box-shadow: 0px 0px 15px 15px #ec731e;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
-}
-
-.imgMundiales {
-    @include flex (flex, center, center)
 }
 
 table {
@@ -177,6 +191,7 @@ table {
     font-family: $font-principal;
     font-size: sizes(parrafo);
     color: $color-primario;
+    @include pantallas (sm) {font-size: 1.3rem;}
 }
 
 .Octavos {
@@ -187,6 +202,7 @@ table {
     font-family: $font-principal;
     font-size: sizes(parrafo);
     color: $color-primario;
+    @include pantallas (sm) {font-size: 1.3rem;}
 }
 
 .Cuartos {
@@ -196,16 +212,18 @@ table {
     font-family: $font-principal;
     font-size: sizes(parrafo);
     color: $color-primario;
+    @include pantallas (sm) {font-size: 1.3rem;}
 }
 
 .Semifinal {
     text-align: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1);
+    grid-template-rows: repeat(1, 1fr);
     font-family: $font-principal;
     font-size: sizes(parrafo);
     color: $color-primario;
+    @include pantallas (sm) {font-size: 1.3rem;}
 }
 
 ul {
