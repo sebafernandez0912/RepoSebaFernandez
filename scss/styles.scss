@@ -195,7 +195,7 @@ table {
     font-size: sizes(parrafo);
     color: $color-primario;
     @include pantallas (sm) {font-size: 1.3rem;};
-    @include pantallas (md) {font-size: 1.6rem;};
+    @include pantallas (md) {font-size: 1.6rem;};}
 
 .Octavos {
     text-align: center;
@@ -263,4 +263,3 @@ ul {
     justify-content: center;
     align-items: center;
 } 
-}

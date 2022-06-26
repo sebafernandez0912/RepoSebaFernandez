@@ -192,62 +192,70 @@ table {
   @media screen and (max-width: 768px) {
     .fixtureGrupos {
       font-size: 1.6rem; } }
-  .fixtureGrupos .Octavos {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    font-family: "Qatar";
-    font-size: 2rem;
-    color: black; }
-    @media screen and (max-width: 480px) {
-      .fixtureGrupos .Octavos {
-        font-size: 1.3rem; } }
-    @media screen and (max-width: 768px) {
-      .fixtureGrupos .Octavos {
-        font-size: 1.6rem; } }
-  .fixtureGrupos .Cuartos {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    font-family: "Qatar";
-    font-size: 2rem;
-    color: black; }
-    @media screen and (max-width: 480px) {
-      .fixtureGrupos .Cuartos {
-        font-size: 1.3rem; } }
-  .fixtureGrupos .Semifinal {
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    font-family: "Qatar";
-    font-size: 2rem;
-    color: black; }
-    @media screen and (max-width: 480px) {
-      .fixtureGrupos .Semifinal {
-        font-size: 1.3rem; } }
-  .fixtureGrupos ul {
-    list-style: none; }
-  .fixtureGrupos .form {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-  .fixtureGrupos .form input {
-    width: 90%;
-    height: 30px;
-    margin: 0.5rem; }
-  .fixtureGrupos .form button {
-    padding: 0.5em 1em;
-    border: none;
-    background: #64c8ff;
-    cursor: pointer; }
-  .fixtureGrupos .slide {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center; }
+
+.Octavos {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-family: "Qatar";
+  font-size: 2rem;
+  color: black; }
+  @media screen and (max-width: 480px) {
+    .Octavos {
+      font-size: 1.3rem; } }
+  @media screen and (max-width: 768px) {
+    .Octavos {
+      font-size: 1.6rem; } }
+
+.Cuartos {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: "Qatar";
+  font-size: 2rem;
+  color: black; }
+  @media screen and (max-width: 480px) {
+    .Cuartos {
+      font-size: 1.3rem; } }
+
+.Semifinal {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  font-family: "Qatar";
+  font-size: 2rem;
+  color: black; }
+  @media screen and (max-width: 480px) {
+    .Semifinal {
+      font-size: 1.3rem; } }
+
+ul {
+  list-style: none; }
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.form input {
+  width: 90%;
+  height: 30px;
+  margin: 0.5rem; }
+
+.form button {
+  padding: 0.5em 1em;
+  border: none;
+  background: #64c8ff;
+  cursor: pointer; }
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
